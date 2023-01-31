@@ -1,10 +1,13 @@
 using System;
 using System.Text;
 
-namespace EditorHtml{
-    public static class Editor{
+namespace EditorHtml
+{
+    public static class Editor
+    {
         
-        public static void Show(){
+        public static void Show()
+        {
             Console.Clear();
             Console.BackgroundColor= ConsoleColor.Blue;
             Console.ForegroundColor= ConsoleColor.White;
@@ -32,7 +35,7 @@ namespace EditorHtml{
             {  
                 Console.WriteLine("Aquivo salvo com sucesso");
                 Thread.Sleep(2500);
-                Menu.Show();
+                Viewer.Show(file.ToString());
             }
             if(resp== 'n')
             Menu.Show();
