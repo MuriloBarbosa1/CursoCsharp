@@ -8,13 +8,17 @@ namespace EditorHtml
         public static void Show(string text)
         {
             Console.Clear();
-            Console.BackgroundColor= ConsoleColor.Blue;
+            Console.BackgroundColor= ConsoleColor.Black;
             Console.ForegroundColor= ConsoleColor.White;
             Console.Clear();
             Console.SetCursorPosition(8,0);
             Console.WriteLine("MODO VIZUALIZAÇÃO"); 
             Console.WriteLine(" ------------------");
             Replace(text);
+            Console.WriteLine(" ------------------");
+            Console.WriteLine("Aperta qualquer tecla para sair");
+            Console.ReadKey();
+            Menu.Show();
         }
         public static void Replace(string text)
         {
@@ -39,7 +43,7 @@ namespace EditorHtml
                 {
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write(words[i]);
-                    Console.Write("");
+                    Console.Write(" ");
                 }
             }
         }

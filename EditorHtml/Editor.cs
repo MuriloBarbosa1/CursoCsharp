@@ -9,7 +9,7 @@ namespace EditorHtml
         public static void Show()
         {
             Console.Clear();
-            Console.BackgroundColor= ConsoleColor.Blue;
+            Console.BackgroundColor= ConsoleColor.Black;
             Console.ForegroundColor= ConsoleColor.White;
             Console.Clear();
             Console.SetCursorPosition(8,0);
